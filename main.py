@@ -30,7 +30,7 @@ class MainHandler(webapp2.RequestHandler):
 		 
 	def post(self):
 		h = httplib.HTTPSConnection('api.groupme.com')
-		body = {"bot_id":"e897d23876c772105f65c0a4eb", "text":""}
+		body = {"bot_id":"ca172b2058c8342d2294baf104", "text":""}
 		headers = {"Content-Type":"application/json"}
 		message = json.loads(self.request.body)['text']
 		words = message.split(' ')
