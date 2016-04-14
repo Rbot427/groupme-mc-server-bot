@@ -32,7 +32,7 @@ class MainHandler(webapp2.RequestHandler):
 		h = httplib.HTTPSConnection('api.groupme.com')
 		body = {"bot_id":"e897d23876c772105f65c0a4eb", "text":""}
 		headers = {"Content-Type":"application/json"}
-		message = json.loads(self.request.body)['text
+		message = json.loads(self.request.body)['text']
 		words = message.split(' ')
 		
 		if message == '!':
